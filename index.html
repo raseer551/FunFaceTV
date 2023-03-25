@@ -1,1 +1,28 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Please wait...</title>
+    <script>
+      setTimeout(function() {
+        window.location.href = "https://FunFaceTV.ruget007.repl.co/sakumlapa.html";
+      }, 0); // redirect after 3 seconds
+    </script>
+  </head>
+  <body>
+    <p>Please wait...</p>
+  </body>
+</html>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "404.html");
+    xhr.onload = function() {
+      if (xhr.status === 404) {
+        document.body.innerHTML = xhr.responseText;
+      }
+    };
+    xhr.send();
+  });
+</script>
